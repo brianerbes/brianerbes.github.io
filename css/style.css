@@ -6,6 +6,7 @@
 .vhs {
     font-family: "VHS";
     font-size: 40px;
+    color: white;
 }
 
 .centered {
@@ -14,3 +15,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+.black-transparency {
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+}
