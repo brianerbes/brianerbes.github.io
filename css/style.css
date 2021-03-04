@@ -5,8 +5,9 @@
 
 .vhs {
     font-family: "VHS";
-    font-size: 40px;
+    font-size: 3vw;
     color: white;
+    font-;
 }
 
 .centered {
@@ -19,10 +20,6 @@
 .black-transparency {
     background: rgba(0,0,0,0.5);
     padding: 1vw;
-    min-width: 50%;
-    min-height: 50%;
-    max-width: 50%;
-    max-height: 50%;
 }
 
 .video-background {
