@@ -7,7 +7,6 @@
     font-family: "VHS";
     font-size: 3vw;
     color: white;
-    font-;
 }
 
 .centered {
@@ -28,5 +27,5 @@
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  filter: blur(16px);
+  filter: blur(1vw);
 }
