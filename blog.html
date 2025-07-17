@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian Erbes - Blog</title>
+    <meta name="description" content="A blog by Brian Erbes covering topics in cybersecurity, threat analysis, and career development.">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Specific styles for blog post articles */
+        main article {
+            background-color: #fdfdfd;
+            border-left: 4px solid #e74c3c; /* Red accent for blog */
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+        .post-meta {
+            font-size: 0.9em;
+            color: #7f8c8d; /* Grayish color */
+            margin-bottom: 10px;
+        }
+        .read-more {
+            display: inline-block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #2c3e50;
+            text-decoration: none;
+            border: 1px solid #2c3e50;
+            padding: 5px 10px;
+            border-radius: 3px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .read-more:hover {
+            background-color: #2c3e50;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <main>
+        <div class="container">
+            <section id="blog-posts">
+                <h2>Cybersecurity Blog & Analysis</h2>
+                <p style="font-style: italic;">A space for sharing insights, technical write-ups, and analysis of topics in the information security landscape.</p>
+                
+                <article>
+                    <h3>Understanding the MITRE ATT&CK Framework</h3>
+                    <p class="post-meta">Posted on July 17, 2025 | Category: Security Frameworks</p>
+                    <p>The MITRE ATT&CK framework is more than just a list of attack techniques; it's a powerful knowledge base for understanding adversary behavior. In this post, I break down what the framework is, how it's structured, and how a SOC analyst can use it to improve threat detection and hunting...</p>
+                    <a href="#" class="read-more">Read More &rarr;</a>
+                </article>
+
+                <article>
+                    <h3>Lab Journal: Analyzing a Phishing Attack with Wazuh</h3>
+                    <p class="post-meta">Posted on July 15, 2025 | Category: Hands-On Lab</p>
+                    <p>I simulated a common phishing attack within my home lab to trace its lifecycle. This write-up documents the entire process, from the initial malicious email delivery to the detection of suspicious PowerShell execution on the endpoint, all viewed through the lens of the Wazuh SIEM...</p>
+                    <a href="#" class="read-more">Read More &rarr;</a>
+                </article>
+
+                <article>
+                    <h3>Why Log Analysis is a SOC Analyst's Superpower</h3>
+                    <p class="post-meta">Posted on July 10, 2025 | Category: Core Skills</p>
+                    <p>At the heart of any Security Operations Center (SOC) is the constant stream of logs from across the enterprise. Being able to effectively parse, correlate, and find the "signal in the noise" is a critical skill. Here's a look at common log sources and basic techniques for analysis...</p>
+                    <a href="#" class="read-more">Read More &rarr;</a>
+                </article>
+
+            </section>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
