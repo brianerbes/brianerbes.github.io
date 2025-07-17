@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Tu Nombre] - Portafolio de Ciberseguridad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <p class="logo">[Tu Nombre]</p>
+            <nav>
+                <a href="#inicio">Inicio</a>
+                <a href="#portafolio">Portafolio</a>
+                <a href="#blog">Blog</a>
+                <a href="#sobre-mi">Sobre Mí</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <div class="hero-text">
+                    <h1>Hola, soy [Tu Nombre]</h1>
+                    <h2>Aspirante a Analista de Ciberseguridad</h2>
+                    <p class="subtitle">Apasionado por la seguridad defensiva, la automatización y la protección de la infraestructura digital.</p>
+                    <a href="#portafolio" class="btn">Ver mis Proyectos</a>
+                </div>
+                <div class="hero-image">
+                    <img src="img/tu-foto.jpg" alt="Foto de [Tu Nombre]">
+                </div>
+            </div>
+        </section>
+
+        <section id="portafolio">
+            <div class="container">
+                <h2>Portafolio de Proyectos</h2>
+                <div class="projects-grid">
+                    <div class="card">
+                        <img src="img/proyecto-soc.png" alt="Diagrama del SOC en casa">
+                        <h3>Proyecto 1: Mi SOC en Casa con Wazuh</h3>
+                        <p>Implementación de un SIEM/XDR para monitorear un endpoint de Windows y detectar un ataque de fuerza bruta simulado.</p>
+                        <a href="https://github.com/brianerbes/Portafolio-Analista-SOC" class="btn-secondary" target="_blank">Ver en GitHub</a>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/proyecto-wireshark.png" alt="Captura de pantalla de Wireshark">
+                        <h3>Proyecto 2: Análisis de Tráfico Malicioso</h3>
+                        <p>Análisis de una captura de paquetes (.pcap) para identificar el ciclo de vida de una infección de malware, desde el C2 hasta la exfiltración.</p>
+                        <a href="#" class="btn-secondary" target="_blank">Ver en GitHub</a>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/proyecto-htn.png" alt="Logo de Hack The Box">
+                        <h3>Proyecto 3: Write-up de Hack The Box</h3>
+                        <p>Resolución completa de la máquina "[Nombre de la Máquina]" y documentación detallada del proceso de explotación y escalada de privilegios.</p>
+                        <a href="#" class="btn-secondary" target="_blank">Ver en GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog">
+            <div class="container">
+                <h2>Blog / Artículos</h2>
+                <div class="projects-grid">
+                     <div class="card">
+                        <h3>Entendiendo la Cyber Kill Chain</h3>
+                        <p>Un resumen de las 7 fases del modelo de Lockheed Martin para entender las etapas de un ciberataque avanzado.</p>
+                        <p class="date">Publicado: 17 de Julio, 2025</p>
+                        <a href="#" class="btn-secondary">Leer Más</a>
+                    </div>
+                     <div class="card">
+                        <h3>¿Por qué Python es el lenguaje de la Ciberseguridad?</h3>
+                        <p>Exploración de las librerías y casos de uso que hacen de Python la herramienta indispensable para la automatización y el análisis de seguridad.</p>
+                        <p class="date">Publicado: 10 de Julio, 2025</p>
+                        <a href="#" class="btn-secondary">Leer Más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-mi">
+            <div class="container">
+                <h2>Sobre Mí</h2>
+                <p>Soy un estudiante de Ingeniería en Sistemas Computacionales con una profunda pasión por la ciberseguridad. Mi objetivo es aplicar mis habilidades de resolución de problemas y mi mentalidad analítica para proteger los activos digitales y responder a las amenazas emergentes. Tengo una base sólida en redes, sistemas operativos y scripting, y busco activamente oportunidades para aplicar mi conocimiento en un entorno profesional como Analista de SOC.</p>
+                <h3>Habilidades Técnicas</h3>
+                <ul class="skills-list">
+                    <li>SIEM & Monitoreo: <strong>Wazuh, Security Onion</strong></li>
+                    <li>Análisis de Red: <strong>Wireshark, TCPdump, Nmap</strong></li>
+                    <li>Sistemas Operativos: <strong>Linux (Kali, Ubuntu), Windows Server</strong></li>
+                    <li>Scripting: <strong>Python, Bash</strong></li>
+                    <li>Análisis de Vulnerabilidades</li>
+                    <li>Respuesta a Incidentes (DFIR)</li>
+                </ul>
+                <a href="docs/TuCV.pdf" class="btn" download>Descargar mi CV</a>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <div class="container">
+                <h2>Contacto</h2>
+                <p>Estoy buscando activamente mi primera oportunidad en el mundo de la ciberseguridad. ¡Conectemos!</p>
+                <p class="contact-info">
+                    <strong>Email:</strong> <a href="mailto:tu-correo@email.com">tu-correo@email.com</a><br>
+                    <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/tu-perfil" target="_blank">linkedin.com/in/tu-perfil</a><br>
+                    <strong>GitHub:</strong> <a href="https://github.com/brianerbes" target="_blank">github.com/brianerbes</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 [Tu Nombre]. Creado con ❤️ y código.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

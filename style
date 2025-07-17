@@ -1,0 +1,219 @@
+/* --- VARIABLES Y ESTILOS GLOBALES --- */
+:root {
+    --color-bg: #1a1a1a;
+    --color-surface: #2a2a2a;
+    --color-primary: #00aaff;
+    --color-text: #f0f0f0;
+    --color-text-secondary: #a0a0a0;
+    --font-heading: 'Roboto', sans-serif;
+    --font-body: 'Roboto Mono', monospace;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    margin: 0;
+    padding-top: 70px; /* Para compensar el header fijo */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    margin-top: 0;
+}
+
+h1 { font-size: 3rem; font-weight: 900; }
+h2 { font-size: 2.5rem; text-align: center; margin-bottom: 40px; }
+h3 { font-size: 1.5rem; }
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+section {
+    padding: 60px 0;
+    border-bottom: 1px solid var(--color-surface);
+}
+
+/* --- HEADER Y NAVEGACIÓN --- */
+header {
+    background-color: rgba(26, 26, 26, 0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--color-surface);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+nav a {
+    color: var(--color-text);
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--color-primary);
+}
+
+/* --- SECCIÓN HERO (INICIO) --- */
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: calc(100vh - 70px);
+}
+
+.hero-text {
+    max-width: 60%;
+}
+
+.hero .subtitle {
+    font-size: 1.2rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 30px;
+}
+
+.hero-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--color-primary);
+}
+
+/* --- BOTONES --- */
+.btn {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    display: inline-block;
+    background-color: transparent;
+    color: var(--color-primary);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid var(--color-primary);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+}
+
+/* --- PORTAFOLIO Y BLOG (CARDS) --- */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: var(--color-surface);
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.card .date {
+    font-size: 0.8rem;
+    color: var(--color-text-secondary);
+    margin-top: 15px;
+}
+
+/* --- SOBRE MÍ --- */
+#sobre-mi p {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.skills-list li {
+    background-color: var(--color-surface);
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+#sobre-mi .btn {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* --- CONTACTO Y FOOTER --- */
+#contacto, footer {
+    text-align: center;
+}
+
+.contact-info {
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+footer {
+    padding: 20px 0;
+    background-color: var(--color-surface);
+    color: var(--color-text-secondary);
+}
